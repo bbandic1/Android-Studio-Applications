@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph1"
+    app:startDestination="@id/actorsFragment">
+
+    <fragment
+        android:id="@+id/actorsFragment"
+        android:name="com.example.cineaste.View.ActorsFragment"
+        android:label="fragment_actors"
+        tools:layout="@layout/fragment_actors" >
+    </fragment>
+    <fragment
+        android:id="@+id/similarFragment"
+        android:name="com.example.cineaste.View.SimilarFragment"
+        android:label="fragment_similar"
+        tools:layout="@layout/fragment_similar" >
+    </fragment>
+</navigation>
