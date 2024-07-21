@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".NovaBiljkaActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- EditTexts -->
+        <EditText
+            android:id="@+id/nazivET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Naziv biljke"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/porodicaET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Porodica biljke"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/medicinskoUpozorenjeET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Medicinsko upozorenje"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/jeloET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Unesite jelo"
+            android:inputType="text"
+            android:minHeight="48dp" />
+
+        <!-- ListViews -->
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicinske koristi:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/medicinskaKoristLVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <ListView
+            android:id="@+id/medicinskaKoristLV"
+            android:layout_width="wrap_content"
+            android:layout_height="387dp"
+            android:layout_marginBottom="16dp"
+            android:choiceMode="multipleChoice" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Klimatski tipovi"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/klimatskiTipLVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <ListView
+            android:id="@+id/klimatskiTipLV"
+            android:layout_width="wrap_content"
+            android:layout_height="386dp"
+            android:layout_marginBottom="16dp"
+            android:choiceMode="multipleChoice" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Zemljisni tipovi:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/zemljisniTipLVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <ListView
+            android:id="@+id/zemljisniTipLV"
+            android:layout_width="wrap_content"
+            android:layout_height="391dp"
+            android:layout_marginBottom="16dp"
+            android:choiceMode="multipleChoice" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profili okusa:"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/profilOkusaLVT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="text"
+            android:text=""
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:clickable="false"
+            android:focusable="false"/>
+
+        <ListView
+            android:id="@+id/profilOkusaLV"
+            android:layout_width="wrap_content"
+            android:layout_height="517dp"
+            android:layout_marginBottom="16dp"
+            android:choiceMode="singleChoice" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jela:"
+            android:textSize="20sp" />
+
+        <ListView
+            android:id="@+id/jelaLV"
+            android:layout_width="wrap_content"
+            android:layout_height="193dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Buttons -->
+
+        <ImageView
+            android:id="@+id/slikaIV"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/biljka"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dodajJeloBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Dodaj jelo" />
+
+            <Button
+                android:id="@+id/dodajBiljkuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="Dodaj biljku" />
+
+            <Button
+                android:id="@+id/uslikajBiljkuBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Uslikaj biljku" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

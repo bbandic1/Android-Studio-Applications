@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyProject</string>
+    <string-array name="mods">
+        <item>Medicinski</item>
+        <item>Kuharski</item>
+        <item>Botanički</item>
+    </string-array>
+</resources>
